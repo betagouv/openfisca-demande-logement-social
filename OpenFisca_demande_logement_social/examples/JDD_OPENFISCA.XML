@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns1:interfaceNuu versionInterface="02.00" xmlns:ns1="http://nuu.application.i2/">
+    <ns1:entete>
+        <ns1:dateFichier>2018-03-15T16:54:06.339+01:00</ns1:dateFichier>
+    </ns1:entete>
+    <ns1:demande>
+        <ns1:demandeLogement>
+            <ns1:numUnique>1110318016982G1104</ns1:numUnique>
+            <ns1:dateCreationDemande>2018-03-15</ns1:dateCreationDemande>
+            <ns1:personnePhysique>
+                <ns1:demandeur>
+                    <ns1:civilite code="1"/>
+                    <ns1:nom>Dupont</ns1:nom>
+                    <ns1:prenom>Jean</ns1:prenom>
+                    <ns1:dateNaissance>1970-01-01</ns1:dateNaissance>
+                    <ns1:nationalite code="1"/>
+                    <ns1:situationFamiliale code="M"/>
+                    <ns1:telPortable>0606060606</ns1:telPortable>
+                    <ns1:mel>jean.dupont@yyyy.fr</ns1:mel>
+                    <ns1:adressePostale>
+                        <ns1:etranger>false</ns1:etranger>
+                        <ns1:numero>103</ns1:numero>
+                        <ns1:voie>avenue de france</ns1:voie>
+                        <ns1:codePostal>75013</ns1:codePostal>
+                        <ns1:commune code="75113"/>
+                    </ns1:adressePostale>
+                    <ns1:situationProfessionnelle>
+                        <ns1:profession>Agent de sécurité</ns1:profession>
+                        <ns1:typeContratTravail code="CDI"/>
+                        <ns1:nomEmployeurPrincipal>AAAA</ns1:nomEmployeurPrincipal>
+                        <ns1:etranger>false</ns1:etranger>
+                        <ns1:codePostal>75000</ns1:codePostal>
+                        <ns1:commune code="75056"/>
+                    </ns1:situationProfessionnelle>
+                    <ns1:revenuFiscal>
+                        <ns1:anneeMoins1>2017</ns1:anneeMoins1>
+                        <ns1:montantMoins1>21000</ns1:montantMoins1>
+                        <ns1:anneeMoins2>2016</ns1:anneeMoins2>
+                        <ns1:montantMoins2>20000</ns1:montantMoins2>
+                    </ns1:revenuFiscal>
+                    <ns1:listeRessourceRecue>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="PAR"/>
+                            <ns1:montant>100</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="AEEH"/>
+                            <ns1:montant>140</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="PINV"/>
+                            <ns1:montant>100</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="AF"/>
+                            <ns1:montant>400</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="CHO"/>
+                            <ns1:montant>150</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="PAJE"/>
+                            <ns1:montant>400</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="BE"/>
+                            <ns1:montant>300</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="AAH"/>
+                            <ns1:montant>100</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="RET"/>
+                            <ns1:montant>100</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="SAL"/>
+                            <ns1:montant>1500</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="AJPP"/>
+                            <ns1:montant>150</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="AMV"/>
+                            <ns1:montant>150</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="RSA"/>
+                            <ns1:montant>130</ns1:montant>
+                        </ns1:detailRessource>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="AUT"/>
+                            <ns1:montant>290</ns1:montant>
+                        </ns1:detailRessource>
+                    </ns1:listeRessourceRecue>
+                    <ns1:listeRessourceVersee>
+                        <ns1:detailRessource>
+                            <ns1:ressource code="PAV"/>
+                            <ns1:montant>120</ns1:montant>
+                        </ns1:detailRessource>
+                    </ns1:listeRessourceVersee>
+                    <ns1:listeRessourceRecuePersACharge/>
+                    <ns1:listeRessourceVerseePersACharge/>
+                </ns1:demandeur>
+                <ns1:listePersonneACharge>
+                    <ns1:personneACharge>
+                        <ns1:nom>DUPONT</ns1:nom>
+                        <ns1:prenom>LEA</ns1:prenom>
+                        <ns1:dateNaissance>2010-01-01</ns1:dateNaissance>
+                        <ns1:sexe code="F"/>
+                        <ns1:lienParente code="E"/>
+                    </ns1:personneACharge>
+                </ns1:listePersonneACharge>
+                <ns1:personneANaitre>
+                    <ns1:nombre>1</ns1:nombre>
+                    <ns1:dateNaissancePrevue>2018-08-01</ns1:dateNaissancePrevue>
+                </ns1:personneANaitre>
+                <ns1:listePersonneEnGarde>
+                    <ns1:personneEnGarde>
+                        <ns1:dateNaissance>2012-01-01</ns1:dateNaissance>
+                        <ns1:sexe code="M"/>
+                        <ns1:coParentalite code="G"/>
+                    </ns1:personneEnGarde>
+                    <ns1:personneEnGarde>
+                        <ns1:dateNaissance>2014-01-01</ns1:dateNaissance>
+                        <ns1:sexe code="M"/>
+                        <ns1:coParentalite code="D"/>
+                    </ns1:personneEnGarde>
+                </ns1:listePersonneEnGarde>
+                <ns1:listeCotitulaire>
+                    <ns1:cotitulaire>
+                        <ns1:civilite code="2"/>
+                        <ns1:nom>DUPONT</ns1:nom>
+                        <ns1:nomPatronymique>MARTIN</ns1:nomPatronymique>
+                        <ns1:prenom>MARIE</ns1:prenom>
+                        <ns1:dateNaissance>1975-02-01</ns1:dateNaissance>
+                        <ns1:nationalite code="2"/>
+                        <ns1:situationFamiliale code="M"/>
+                        <ns1:lienDemandeur code="M"/>
+                        <ns1:situationProfessionnelle>
+                            <ns1:profession>Assistante maternelle</ns1:profession>
+                            <ns1:typeContratTravail code="CDI"/>
+                            <ns1:nomEmployeurPrincipal>Département</ns1:nomEmployeurPrincipal>
+                            <ns1:etranger>false</ns1:etranger>
+                            <ns1:codePostal>75020</ns1:codePostal>
+                            <ns1:commune code="75120"/>
+                        </ns1:situationProfessionnelle>
+                        <ns1:revenuFiscal>
+                            <ns1:anneeMoins1>2017</ns1:anneeMoins1>
+                            <ns1:anneeMoins2>2016</ns1:anneeMoins2>
+                        </ns1:revenuFiscal>
+                        <ns1:listeRessourceRecue>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="PAJE"/>
+                                <ns1:montant>100</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="BE"/>
+                                <ns1:montant>140</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="AAH"/>
+                                <ns1:montant>20</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="SAL"/>
+                                <ns1:montant>1000</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="AJPP"/>
+                                <ns1:montant>50</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="AMV"/>
+                                <ns1:montant>600</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="RSA"/>
+                                <ns1:montant>75</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="RET"/>
+                                <ns1:montant>150</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="PAR"/>
+                                <ns1:montant>200</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="AEEH"/>
+                                <ns1:montant>120</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="PINV"/>
+                                <ns1:montant>50</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="CHO"/>
+                                <ns1:montant>100</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="AF"/>
+                                <ns1:montant>200</ns1:montant>
+                            </ns1:detailRessource>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="AUT"/>
+                                <ns1:montant>360</ns1:montant>
+                            </ns1:detailRessource>
+                        </ns1:listeRessourceRecue>
+                        <ns1:listeRessourceVersee>
+                            <ns1:detailRessource>
+                                <ns1:ressource code="PAV"/>
+                                <ns1:montant>30</ns1:montant>
+                            </ns1:detailRessource>
+                        </ns1:listeRessourceVersee>
+                    </ns1:cotitulaire>
+                </ns1:listeCotitulaire>
+                <ns1:logementActuel>
+                    <ns1:listeModeleLogement>
+                        <ns1:modeleLogement code="LP"/>
+                    </ns1:listeModeleLogement>
+                    <ns1:montantMensuelLoyer>1000</ns1:montantMensuelLoyer>
+                    <ns1:nombreHabitant>5</ns1:nombreHabitant>
+                    <ns1:categorieLogement code="A"/>
+                    <ns1:typeLogementActuel code="T3"/>
+                    <ns1:surface>50</ns1:surface>
+                    <ns1:proprietaire>false</ns1:proprietaire>
+                </ns1:logementActuel>
+            </ns1:personnePhysique>
+        </ns1:demandeLogement>
+    </ns1:demande>
+</ns1:interfaceNuu>
