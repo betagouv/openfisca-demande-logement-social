@@ -11,6 +11,19 @@ import mapping
 
 namespaces = { 'ns1': 'http://nuu.application.i2/' }
 
+def getRessource(ressourceElement):
+    code = ressourceElement.find('ns1:ressource', namespaces=namespaces).get('code')
+    montant = ressourceElement.find('ns1:montant', namespaces=namespaces).text
+
+    if not code in mapping.ressource:
+        print('Avertissement : Ressource ' + code + ' non prise en compte (montant : ' + montant + ')', file=sys.stderr)
+        return None
+
+    return {
+        'field': mapping.ressource[code],
+        'value': float(montant)
+    }
+
 def generateSituation(file):
     parser = etree.XMLParser(remove_blank_text=True, )
     tree = etree.parse(file, parser)
@@ -18,6 +31,15 @@ def generateSituation(file):
     dateDemande = periods.instant(tree.find('//ns1:dateCreationDemande', namespaces=namespaces).text)
     moisDemande = dateDemande.period('month')
     moisDemandeKey = str(moisDemande)
+
+    details = tree.find('//ns1:personnePhysique', namespaces=namespaces)
+    demandeur = details.find('ns1:demandeur', namespaces=namespaces)
+
+    listeRessourceRecueDemandeur = demandeur.find('ns1:listeRessourceRecue', namespaces=namespaces)
+    detailRessources = listeRessourceRecueDemandeur.findall('ns1:detailRessource', namespaces=namespaces)
+
+    demandeurRessources = [getRessource(ressource) for ressource in detailRessources]
+    demandeurRFR = demandeur.find('ns1:revenuFiscal', namespaces=namespaces)
 
     last4Years = [moisDemande.offset(offset, 'month')  for offset in range(-12*4+1,1)]
     def vectorData(value):
