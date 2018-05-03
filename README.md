@@ -2,6 +2,38 @@
 
 Des informations techniques sont disponibles à [la page suivante](http://sne.info.application.logement.gouv.fr/cahier-des-interfaces-gestion-partagee-de-la-a492.html).
 
+## Installation
+
+Les commandes suivantes permettent l'installation de ce paquet :
+```bash
+git clone https://github.com/betagouv/openfisca-demande-logement-social.git &&
+cd openfisca-demande-logement-social &&
+virtualenv .venv &&
+source .venv/bin/activate &&
+pip install --editable .
+```
+
+## Usages
+
+### Pas à pas
+
+`python OpenFisca_demande_logement_social/script.py generate OpenFisca_demande_logement_social/examples/JDD_OPENFISCA.XML` permet de générer un payload JSON compréhensible par l'API Web d'OpenFisca. Ce payload correspond à une demande de calcul des aides au logement.
+
+`python OpenFisca_demande_logement_social/script.py generate OpenFisca_demande_logement_social/examples/JDD_OPENFISCA.XML > request.json` permet de sauvegarder dans le fichier `request.json` le payload JSON.
+
+`curl -X POST https://fr.openfisca.org/api/v21/calculate -d @request.json --header 'Content-Type: application/json'` permet d'utiliser l'instance publique de l'API Web d'OpenFisca (avec OpenFisca-France) pour faire le calcul.
+
+Le résultat du calcul peut là encore être sauvegardé avec un `>` par exemple `curl -X POST https://fr.openfisca.org/api/v21/calculate -d @request.json --header 'Content-Type: application/json' > response.json`.
+
+Enfin pour extraire le montant des aides au logement calculé on peut utiliser la commande suivante :
+`python OpenFisca_demande_logement_social/script.py extract response.json`
+
+
+### Tout à la fois
+
+`python OpenFisca_demande_logement_social/script.py generate OpenFisca_demande_logement_social/examples/JDD_OPENFISCA.XML | curl -X POST https://fr.openfisca.org/api/v21/calculate -d @- --header 'Content-Type: application/json' | python OpenFisca_demande_logement_social/script.py extract -`
+
+
 ## Correspondances
 
 Code    Libellé
@@ -15,24 +47,6 @@ situationFamiliale
 M   Marié
 typeContratTravail
 CDI CDI
-listeRessourceRecue
-SAL     "Salaire ou revenu
-d’activité"
-RET Retraite
-CHO Allocation chômage
-PAR Pension alimentaire reçue
-PINV    Pension invalidité
-AF  Allocations familiales
-AAH Allocation d'adulte handicapé
-AEEH    Allocation d'éducation d'enfant handicapé
-AJPP    Allocation journalière de présence parentale
-RSA Revenu de solidarité active
-AMV Allocation de minimum vieillesse
-PAJE    Allocation jeune enfant
-BE  Bourse étudiant
-AUT Autre (hors APL ou AL)
-listeRessourceVersee
-PAV Pension alimentaire versée
 ModeleLogement
 LP  Locataire dans le privé
 sexe
