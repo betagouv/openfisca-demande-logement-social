@@ -25,7 +25,7 @@ def getRessource(ressourceElement):
     }
 
 def generateSituation(file):
-    parser = etree.XMLParser(remove_blank_text=True, )
+    parser = etree.XMLParser(remove_blank_text=True)
     tree = etree.parse(file, parser)
 
     dateDemande = periods.instant(tree.find('//ns1:dateCreationDemande', namespaces=namespaces).text)
