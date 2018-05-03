@@ -7,6 +7,7 @@ import json
 
 from openfisca_core import periods
 
+import mapping
 
 namespaces = { 'ns1': 'http://nuu.application.i2/' }
 
