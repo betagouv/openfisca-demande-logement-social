@@ -27,7 +27,7 @@ ressource = {
         'entity': 'individu'
     },
     'CHO': { # Allocation chômage
-        'name': 'chomage_net',
+        'name': 'chomage_brut',
         'entity': 'individu'
     },
     'PAJE': { # Allocation jeune enfant
@@ -53,7 +53,7 @@ ressource = {
         'name': 'rsa'
     },
     'SAL': { # ou revenu d’activité
-        'name': 'salaire_net',
+        'name': 'salaire_de_base',
         'entity': 'individu'
     },
 }
